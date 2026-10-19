@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Accesible - Fredy Santiago Rincon Africano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tarjeta">
+        <div class="tarjeta1">
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre completo</label>
+                <input class="nombreC" placeholder="¿como te llamas?" type="text" id="nombre" name="nombre" required minlength="3" aria-required="true">
+                <br>
+                
+
+                <div class="campo-correo">
+                    <label for="correo">Correo electrónico</label>
+                    <input class="correo" placeholder="Ej: AguanteMiloJ@gmail.com" type="email" id="correo" name="correo" required aria-required="true" aria-describedby="ayuda-correo">
+                    <br>
+                    <small class="error" id="ayuda-correo">El correo es obligatorio</small>
+                </div>
+
+                <label for="contrasena">Ingrese su contraseña</label>
+                <input class="contrasena" placeholder="********" type="password" id="contrasena" name="contrasena" aria-required="true" required >
+                <button class="ojito" type="button" aria-label="Mostrar contraseña"><strong aria-hidden="true">👁</strong></button>
+
+                <label for="confirmcontra">Confirme su contraseña</label>
+                <input class="contrasena" placeholder="********" type="password" id="confirmcontra" name="confirmcontra" aria-required="true" required>
+                <button class="ojito" type="button" aria-label="Mostrar confirmación de contraseña"><strong aria-hidden="true">👁</strong></button>
+
+                <div class="crear-perfil">
+                    <button type="submit">Actualizar perfil</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="tarjeta2">
+            <div class="progreso">
+                <span>65%</span>
+            </div>
+            <div class="perfil-completado">
+                <p>Perfil completado</p>
+            </div>
+
+            <div class="tarjeta3">
+                <s>Cuenta creada</s>
+                <br>
+                <s>Barra de progreso completada</s>
+                <br>
+                <s>Perfil creado</s>
+                <br>
+                <s class="linea-mitad">Cree su primer proyecto</s>
+                <br>
+                <s class="linea-mitad">Invite un amigo</s>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
